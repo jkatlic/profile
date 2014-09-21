@@ -1,0 +1,301 @@
+body{
+	background: url(../img/b2.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: 200% 125%;
+	background-position: center center;
+	margin: 0; 
+	padding: 0;
+}
+
+
+/* Site Controls */
+#site-controls{ 
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+}
+	#site-controls i{ 
+		color: rgba(200, 200, 200, 0.7); 
+		cursor: pointer;
+		z-index: 15; 
+	}
+	
+	#site-controls > #home-controls{ width: 100%; text-align: center; }
+	#site-controls > #other-controls{ width: 100%; }
+		#site-controls > #other-controls > i:first-child{ float: left; }
+		#site-controls > #other-controls > i:nth-child(2){ float: right; }
+/* End Site Controls */
+
+
+/* Main Classes */
+.hidden{ display: none !important; }
+
+.profile-section {
+    width: 100%;
+    height: 700px;
+    padding: 25px 0px;
+    margin: 100px 0px;
+    background-color: rgba(15, 15, 15, 0.6);
+}
+	#home.profile-section{ background: none !important; }
+	
+	.profile-section > h2{ 
+		font-size: 2.5em;
+		color: #CCC;
+		margin: 10px 20px;
+	}
+	
+	.profile-section > .profile-content{ /*profile section content pane*/
+		width: 90%;
+		max-width: 1280px;
+		height: 91%;
+		overflow-y: auto;
+		margin: auto;
+		padding: 3px 10px;
+		background-color: rgba(201, 192, 165, 0.86);
+		font-size: 1.5em;
+	}
+	
+.fixed-menu{
+	position: fixed !important;
+	top: 0 !important;
+}
+/* End Main Classes */	
+	
+	
+/* Header */
+#header-logo{
+	height: 80px;
+	margin: 15px 25px;
+}
+
+#menu-container{ /*a safety net for the changing nav bar*/
+	height: 80px;
+	margin: 0;
+	padding: 0;
+}
+
+button.navbar-toggle{ 
+	background: none;
+	color: #222;
+}
+
+.container > .navbar-collapse{
+	margin: 0 !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.container.open > .navbar.navbar-inverse{ 
+	background: none !important;
+	border: none !important;
+}
+	.container.open > .navbar.navbar-inverse .active > a{ border: solid 1px #CCC; background: none !important; }
+	.container.open > .navbar.navbar-inverse a{ color: #222 !important; }
+	.container.open > .navbar.navbar-inverse a:hover, 
+	.container.open > .navbar.navbar-inverse a:focus{ color: #000 !important; border-bottom: solid 1px; }
+	.container.open .navbar-toggle .icon-bar{ background-color: rgba(53, 53, 53, 1); }
+	.container.open .navbar-toggle:hover .icon-bar,
+	.container.open .navbar-toggle:active .icon-bar,
+	.container.open .navbar-toggle:focus .icon-bar{ background-color: rgba(220, 220, 220, 1); }
+
+.nav.navbar-nav{ float: right !important; }
+/* End Header */
+
+
+/* Home */
+#home{
+	width: 100%;
+	height: 700px;
+	margin: 0px 0px 100px 0px;
+	text-align: center;
+}
+	#home a{
+		font-size: 1em;
+		color: #666;
+		text-shadow: 0px 0px 0px #222;
+	}
+	
+	#home a:hover{ color: #CCC; }
+		#home a > i{ margin-top: 615px;	}
+/* End Home */
+
+
+/* Website Section */
+.cboxIframe{ 
+	width: 100%;
+	height: 90%;
+	border-radius: 5px;
+	border: medium solid;
+	padding: 5px;
+	margin-top: 63px;
+}
+#cboxClose{
+	position: relative;
+	height: 50px;
+	width: 100%;
+	border: medium none;
+	background-color: #202020;
+	color: #D39633;
+	font-size: 1.3em;
+	margin-top: -15px;
+}
+/* End Website Section */
+
+
+/* Contact Section */
+#contact-button-container{
+	height: 99%;
+	overflow-y: auto;
+	text-align: center;
+	background: none;
+}
+
+.contact-button {
+    width: 80%;
+    height: 48.5%;
+    position: relative;
+    margin: 35px 3px;
+	padding-bottom: 5px;
+    background-color: rgba(34, 34, 34, 0.96);
+    color: #D39633;
+}
+	.contact-button i{ /*center the icons*/
+		margin: 12% auto;
+		display: block;
+	}
+	
+div.stretchy-wrapper {
+	position: relative;
+	width: 30%;
+	min-width: 200px;
+	display: inline-block;
+}
+
+.contact-button#ln:after{content: "LinkedIn";}
+.contact-button#tw:after{content: "Twitter";}
+.contact-button#ig:after{content: "Instagram";}
+.contact-button#jf:after{content: "JS Fiddle";}
+.contact-button#gh:after{content: "GitHub";}
+.contact-button#em:after{content: "Email";}
+/* End Contact Section */
+
+
+/* Resume Stylings */
+#resume-holder{
+	width: 90%;
+	margin: auto;
+	background: rgba(217,216,200,0.80);
+	font-size: 16px;
+	overflow-y: auto;
+}
+#resume-holder td{
+	padding: 5px;
+	vertical-align:text-top;
+}
+
+#resume-holder h2{
+	font-size: 1.9em;
+	font-weight: bold;
+}
+
+#resume-holder h1{
+	font-size: 2.6em;
+	font-weight: bold;
+}
+
+#resume-holder h3{
+	font-size: 1.6em;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+#resume-holder p{
+	font-size: 1.3em;
+}
+
+#resume-holder li{
+	font-size: 1.3em;
+	margin-top: 3px;
+}
+
+#resume-holder tr td:first-child{
+	text-align: right;
+	color: rgba(200,127,34,1.00);
+}
+/* End Resume Stylings */
+
+
+/* Footer */
+#footer{
+	width: 100%;
+	padding: 10px;
+	background-color: rgba(15, 15, 15, 0.93);	
+	color: rgba(211,150,51,1.00);
+	font-size: 1.3em;
+	text-align: center;
+}
+/* End Footer */
+
+
+/* OVERRIDES */
+.navbar-wrapper .container{
+	width: 100%;
+	padding: 0; 
+	margin: auto;
+	z-index: 20;
+}
+
+.navbar-brand{
+	margin-left: 0px !important;
+}
+
+.navbar{ border-radius: 0px !important; }	
+
+.ui-tabs .ui-tabs-panel {
+  	height: 583px !important;
+	overflow-y: auto;
+	border: 1px solid #CCC !important;
+}
+
+	/* Code Carousel Styles */
+.carousel{
+	height: 95%;
+	overflow-y: auto;
+	margin: auto;
+}
+
+.carousel-inner .item{
+	height: 590px;
+}
+	.carousel-inner .item img, .carousel-inner .item div:first-child{
+		width: 70%;
+		margin: auto;
+	}
+	.carousel-inner .item a > img{ height: 83%; max-width: 1280px; }
+	.carousel-inner .item div:first-child{ height: 55% !important; }
+
+.carousel-indicators{ 
+	bottom: 0px !important;
+	z-index: 0 !important;
+}
+
+.carousel-caption{ 
+	right: 20%;
+	left: 20%;
+	height: 73px;
+}
+	.carousel-caption h3{ font-size: 1.9em; margin: 0px; }
+	.carousel-caption p{ font-size: 1.5em; margin: 0px; }
+
+.carousel-control > span.glyphicon{ 
+	border-radius: 100px;
+	height: 50px;
+	width: 50px;
+	vertical-align: middle;
+	padding-top: 8px; 
+}
+.carousel-control .glyphicon-chevron-right { right: 17% !important; }
+.carousel-control .glyphicon-chevron-left{ left: 17%; !important; }
+	/*End Code Carousel Styles */
+/* End Overrides */

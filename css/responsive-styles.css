@@ -1,0 +1,72 @@
+@charset "utf-8";
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 768, 480
+   1280-1024   - desktop (default grid)
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+	#site-controls i { font-size: 3.8em; }
+	.contact-button i{font-size: 4.1em}
+	.carousel-inner .item a > img{ height: 80% !important; }
+	.carousel-caption { bottom: 50px; }
+}
+
+@media all and (max-width: 480px) { 
+	#site-controls i { font-size: 2.8em; }
+	.contact-button i {font-size: 3.1em}
+	
+	#resume-holder h1, #resume-holder h2 { font-size: 1.6em; }
+	#resume-holder p, 
+	#resume-holder li,
+	#resume-holder h3 { font-size: 1.3em; }
+	
+	.profile-section > .profile-content { font-size: 1.3em; }
+	
+	.carousel-inner .item a > img{ height: 75% !important; }
+	.carousel-caption { bottom: 58px; }
+}
+
+
+@media all and (max-width: 767px){ 
+	.fixed-menu .nav.navbar-nav {
+		background: rgba(43, 43, 43, 0.9);
+		margin-top: 0px;
+	}
+}
+
+
+/* COMING SOON!!! */
+
+/* Portrait */
+@media screen and (orientation:portrait) { /* Portrait styles here */ }
+/* Landscape */
+@media screen and (orientation:landscape) { /* Landscape styles here */ }
+
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {} 
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {}
+

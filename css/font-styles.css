@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* My Custom Fonts */
+	
+@font-face {
+    font-family: 'rock_saltregular';
+    src: url('../font/Rock Salt/rocksalt-webfont.eot');
+    src: url('../font/Rock Salt/rocksalt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Rock Salt/rocksalt-webfont.woff') format('woff'),
+         url('../font/Rock Salt/rocksalt-webfont.ttf') format('truetype'),
+         url('../font/Rock Salt/rocksalt-webfont.svg#rock_saltregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'journalregular';
+    src: url('../font/Journal/journal-webfont.eot');
+    src: url('../font/Journal/journal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Journal/journal-webfont.woff') format('woff'),
+         url('../font/Journal/journal-webfont.ttf') format('truetype'),
+         url('../font/Journal/journal-webfont.svg#journalregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pompiere_regular';
+    src: url('../font/pompiere/pompiere-regular-webfont.eot');
+    src: url('../font/pompiere/pompiere-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pompiere/pompiere-regular-webfont.woff') format('woff'),
+         url('../font/pompiere/pompiere-regular-webfont.ttf') format('truetype'),
+         url('../font/pompiere/pompiere-regular-webfont.svg#pompiere_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Default Font Styles */
+h1, h2, h3, p, li, a { font-family: 'pompiere_regular', arial; }
+
+.first-line{ text-indent: 20px; }
+
+li a{ font-family: 'rock_saltregular'; }
+
+a div h1{ font-family: 'journalregular'; font-size: 80px; }
+
+.navbar-brand{ font-family: 'journalregular'; font-size: 40px; color: rgba(211,150,51,1.00) !important;}
+
+.navbar-inverse .navbar-nav > li > a { color: rgba(211,150,51,1.00) !important; }
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-brand:hover, .navbar-brand:focus {
+    color: #FFF !important;
+    background-color: transparent;
+}
