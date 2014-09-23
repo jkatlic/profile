@@ -31,6 +31,10 @@ body{
 /* Main Classes */
 .hidden{ display: none !important; }
 
+.bold{ font-weight: bold; font-size: 1.4em; }
+
+.center{ text-align: center; }
+
 .profile-section {
     width: 100%;
     height: 700px;
