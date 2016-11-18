@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-image: url('../img/bodyBack.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+}
+
+a, a:hover, a:visited{ text-decoration: none; color: inherit;}
+
+#htmlContent{
+	width: 1152px;
+	margin: auto;
+}
+
+/*
+** HEADER AREA
+*/
+#head{
+	width: 1152px;
+	height: 150px;
+	background-color: #141E14;
+	border-radius: 0 0 8px 8px;
+	border: solid 1.5px #FCFCFC;
+	border-top: none;
+	margin: 0;
+	top: 0;
+	box-shadow: 3px 5px 15px  rgba(33,27,57,0.80);
+	background-color: rgba(213,212,212,0.80);
+}
+
+#logoPicture{ float: left; }
+
+#logoPicture img{ height: 180px; }
+
+#headerTitle{
+	float: left;
+	font-family: Arial;
+	font-size: 1.8em;
+	color: #000;
+	padding-top: 10px;
+}
+
+#headerTitle h1, #headerTitle h2{
+	margin: 0;
+	text-shadow: 5px 5px 15px rgba(33,27,57,0.80);
+}
+
+/*
+** BUTTONS
+*/
+#buttonContainer{
+	position: relative;
+	right: 0;
+	bottom: 0;
+	top: 62%;
+}
+
+#buttonBox{
+	position: absolute;
+	right: 12px;
+	font-size: 1.8em;
+	font-family: Arial;
+	color: #000;
+}
+
+#buttonBox ul{
+	list-style: none;
+}
+
+#buttonBox li{
+	float: left;
+	padding: 5px;
+	margin-left: 5px;
+	border-radius: 7px 7px 10px 10px;
+	border-bottom: solid 1px #CCC;
+	background-color: rgba(181, 181, 171, 0.40);
+	box-shadow: 0px 0px 6px  rgba(33,27,57,1.00);
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg1JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjMzIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk4JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjMzIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.33) 85%, rgba(0,0,0,0.33) 98%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(85%,rgba(0,0,0,0.33)), color-stop(98%,rgba(0,0,0,0.33))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.33) 85%,rgba(0,0,0,0.33) 98%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.33) 85%,rgba(0,0,0,0.33) 98%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.33) 85%,rgba(0,0,0,0.33) 98%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.33) 85%,rgba(0,0,0,0.33) 98%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#54000000',GradientType=0 ); /* IE6-8 */
+}
+
+#buttonBox li:hover{ color: rgba(16,41,96,1.00); }
+
+/*
+** MIDDLE CONTENT AREA
+*/
+#middleContainer{
+	width: 100%;
+	height: 650px;
+	background-color: rgba(213,212,212,0.80);
+	margin-top: 25px;
+	border-radius: 8px;
+	border: solid 1px #CCC;
+	box-shadow: 3px 5px 15px  rgba(33,27,57,0.80);
+}
+
+/*
+** MAIN TEXT AREA
+*/
+#middleContainer #text{
+	height: 90%; 
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin: 15px;
+	font-family: Arial;
+}
+
+#middleContainer #text p{
+	padding: 15px;
+	line-height: 20px;
+	font-size: 1.6em;
+	font-family: Arial;
+	color: #000;
+	margin: 0 7px;
+	padding: 0;
+	text-indent:25px;
+}
+
+/*
+** IMAGES WITHIN THE TEXT
+*/
+#middleContainer #text .leftImg{
+	float: left;
+	border: solid 3px rgba(94,153,201,0.70);
+	width: 100px;
+	border-radius: 8px;
+	padding: 3px;
+	margin: 5px;
+}
+
+#middleContainer #text .rightImg{
+	float: right;
+	border: solid 3px rgba(94,153,201,0.70);
+	border-radius: 8px;
+	padding: 3px;
+	margin: 5px;
+}
+#middleContainer #text .img{
+	border: solid 3px rgba(94,153,201,0.70);
+	border-radius: 8px;
+	padding: 3px;
+	margin: 5px;
+	height: 150px;
+}
+
+/*
+** FOOTER AREA
+*/
+
+#footer{
+	text-align: center;
+	font-size: 0.8em;
+}

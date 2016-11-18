@@ -1,5 +1,4 @@
 $(document).ready(function(e){
-	
 	$(window).scroll(function(e){ //Hooks into the windows scrolling action
 		var rect = document.getElementById('menu-container').getBoundingClientRect(); //gets the menu bar
 			//check where the menu is
@@ -48,6 +47,9 @@ $(document).ready(function(e){
 		top: '0px'
 	});
 	
+	/*
+	** This is a future idea don't have the HTML setup for it yet..
+	*/
 	$('#switch').click(function(e){
 		if($('.pretty_code').attr('class').search("hide") >= 0){
 			$('.pretty_code').removeClass('hide');
@@ -62,18 +64,20 @@ $(document).ready(function(e){
 		}
 	});
 	
-	
+	/*
+	** This manages the sites up&down functionality. 
+	*/
 	$('#site-controls i').click(function(e){
+		var currSect = CheckCurrentSection();
+		
 		if( this.getAttribute('data-task') === "up" ){ //hanlde going up
-			var nextId = $("#" + currentSection).prev(".profile-section").attr('id');
+			var nextId = $("#" + currSect).prev(".profile-section").attr('id');
 			if( nextId === "home" ){
 				nextId = "#header-logo";
 			}
-			console.log(currentSection);
 			SmoothScroll( nextId );
 		}else if( this.getAttribute('data-task') === "down" ){ //handle going down
-			console.log(currentSection);
-			SmoothScroll( $("#" + currentSection).next(".profile-section").attr('id') );
+			SmoothScroll( $("#" + currSect).next(".profile-section").attr('id') );
 		}
 	});
 	

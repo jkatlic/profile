@@ -16,8 +16,7 @@
 }
 
 @media all and (max-width: 480px) { 
-	#site-controls i { font-size: 3.5em; }
-	
+	#site-controls i { font-size: 2.8em; }
 	.contact-button i {font-size: 3.1em}
 	
 	#resume-holder h1, #resume-holder h2 { font-size: 1.6em; }
@@ -25,40 +24,10 @@
 	#resume-holder li,
 	#resume-holder h3 { font-size: 1.3em; }
 	
-	.profile-section { height: 600px; }
-	
 	.profile-section > .profile-content { font-size: 1.3em; }
 	
-	.carousel-inner .item a > img{ height: 70% !important; padding-top: 50px }
-	
-	.carousel-caption {  }
-	
-		/* Resume Stylings */
-	#resume-content h2{
-		font-size: 2.4rem;
-		font-weight: bold;
-	}
-
-	#resume-content h3{
-		font-size: 1.8rem;
-		font-weight: bold;
-		letter-spacing: 2px;
-	}
-
-	#resume-content > div:first-child{ margin-top: 10px; }
-
-	#resume-content p, #resume-content li{ font-size: 1.6rem; }
-
-	#resume-content div div:first-child{ 
-	}
-
-	#resume-content div div:nth-child(2){
-	}
-
-	#resume-content > h3{ 
-		font-size: 1.5rem; 
-	}
-	/* End Resume Stylings */
+	.carousel-inner .item a > img{ height: 75% !important; }
+	.carousel-caption { bottom: 58px; }
 }
 
 

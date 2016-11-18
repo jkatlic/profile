@@ -1,0 +1,118 @@
+/*The main table*/
+.mainContainer{
+    width:1000px;
+    margin:auto;
+}
+
+/*The title bar*/
+.head{
+    background-image: url(img/hBanner.jpg);
+    background-position: top;
+    background-size: 1000px;
+    font-family: Verdana;
+    border:#CCCCCC solid 2px;
+    border-radius: 5px;
+    background-color:black;
+    opacity:.90;
+    color: whitesmoke;
+}
+
+/*The menu*/
+.menuContainer{
+    margin:auto;
+    width:1000px;
+}
+#menu{
+    margin:auto;
+    width:800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color:black;
+}
+#menuItem img{
+    width:200px;
+    height:75px;
+    border-radius:8px;
+    margin-right:18px;
+    margin-left:19px;
+}
+
+/*The main text*/
+.mainTextContainer{
+    border:#CCCCCC solid 2px;
+    border-radius: 5px;
+    background-color:black;
+    opacity:.90;
+    color:white;
+}
+#text{
+	/*This is used on any text in a box*/
+    font-family: Verdana;
+    margin:auto 10px 10px 10px;
+}
+#textHead{
+    margin-left:5px;
+}
+
+/*The main text for the home page*/
+.homeText{
+    border:#CCCCCC solid 2px;
+    border-radius: 5px;
+    background-color:black;
+    opacity:.90;
+    color:white;
+}
+.homeText{
+    width:1000px;
+}
+
+/*The box for the trailer*/
+.trailer{
+    object-position: 100%;
+    border:#CCCCCC solid 2px;
+    border-radius: 5px;
+    height: 315px;
+}
+
+/*The poster box styles*/
+.coverPhoto{
+    border:#CCCCCC solid 2px;
+    border-radius: 5px;
+    background-color:black;
+    opacity:.90;
+    height: 375px;
+}
+#coverHead{
+    font-family: Verdana;
+    margin-top: 5px;
+    margin-bottom:5px;
+    color:white;
+}
+#coverImg{
+    height:315px;
+    width:275px;
+    margin-bottom:10px;
+}
+
+/*The copyright and footer styles*/
+.copy{
+    text-align:center;
+    color:white;
+}
+.footer{
+    width:1000px;
+}
+
+/*A Fix for firefox*/
+.fireFix{
+    height:315px;
+}
+
+/*Used to adjust the body background image*/
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}

@@ -1,5 +1,5 @@
 var hideUpTrigger = false; //this lets us only run the if..else that determines when to display the site up control.
-var currentSection = "";
+
 
 /*
 ** CheckCurrentSection
@@ -16,7 +16,6 @@ function CheckCurrentSection(){
 		if(sect.top <= 400 && sect.top >= 0){ //catchs the elements as they pass right below the menu bar
 			MakeSectionActive("#" + elem.getAttribute('id') + "-button"); //makes that menu item active
 			currElem = elem.getAttribute('id');
-			currentSection = currElem;
 			return false;
 		}
 	});
@@ -30,7 +29,6 @@ function CheckCurrentSection(){
 			currElem = currElem.split("-"); //break down the id of the menu item to get the section id. (id looks like [section-id]-button)
 			currElem = currElem[0];
 		}
-		currentSection = currElem;
 	}
 	
 	if(currElem === "contact"){
@@ -64,7 +62,6 @@ function MakeSectionActive( id ){
 */
 
 function SmoothScroll( to ){
-	console.log(to);
 	if( to.indexOf("#") < 0 ){ to = "#" + to; } //makes sure we have a valid id accessor string
 	var target = $(to);
 	

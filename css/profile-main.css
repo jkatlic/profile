@@ -45,9 +45,12 @@ body{
 	#home.profile-section{ background: none !important; }
 	
 	.profile-section > h2{ 
-		font-size: 2.5em;
+		position: relative;
+		top: -58px;
+		font-size: 3.5em;
 		color: #CCC;
 		margin: 10px 20px;
+		text-shadow: 0px 0px 2px #000;
 	}
 	
 	.profile-section > .profile-content{ /*profile section content pane*/
@@ -95,7 +98,7 @@ button.navbar-toggle{
 	background: none !important;
 	border: none !important;
 }
-	.container.open > .navbar.navbar-inverse .active > a{ border: solid 1px #CCC; background: none !important; }
+	.container.open > .navbar.navbar-inverse .active > a{ border: solid 1px #666; background: none !important; }
 	.container.open > .navbar.navbar-inverse a{ color: #222 !important; }
 	.container.open > .navbar.navbar-inverse a:hover, 
 	.container.open > .navbar.navbar-inverse a:focus{ color: #000 !important; border-bottom: solid 1px; }
@@ -176,51 +179,57 @@ div.stretchy-wrapper {
 	min-width: 200px;
 	display: inline-block;
 }
-
-.contact-button#ln:after{content: "LinkedIn";}
-.contact-button#tw:after{content: "Twitter";}
-.contact-button#ig:after{content: "Instagram";}
-.contact-button#jf:after{content: "JS Fiddle";}
-.contact-button#gh:after{content: "GitHub";}
-.contact-button#em:after{content: "Email";}
+	/*I did this just for the practice of the technique*/
+.contact-button#ln:after{ content: "LinkedIn"; }
+.contact-button#tw:after{ content: "Twitter"; }
+.contact-button#ig:after{ content: "Instagram"; }
+.contact-button#jf:after{ content: "JS Fiddle"; }
+.contact-button#gh:after{ content: "GitHub"; }
+.contact-button#em:after{ content: "Email"; }
 /* End Contact Section */
 
 
 /* Resume Stylings */
-#resume-content h2{
-	font-size: 2.6rem;
+#resume-holder{
+	width: 90%;
+	margin: auto;
+	background: rgba(217,216,200,0.80);
+	font-size: 16px;
+	overflow-y: auto;
+}
+#resume-holder td{
+	padding: 5px;
+	vertical-align:text-top;
+}
+
+#resume-holder h2{
+	font-size: 1.9em;
 	font-weight: bold;
 }
 
-#resume-content h3{
-	font-size: 2.0rem;
+#resume-holder h1{
+	font-size: 2.6em;
+	font-weight: bold;
+}
+
+#resume-holder h3{
+	font-size: 1.6em;
 	font-weight: bold;
 	letter-spacing: 2px;
 }
 
-#resume-content > div:first-child{ margin-top: 10px; }
+#resume-holder p{
+	font-size: 1.3em;
+}
 
-#resume-content p, #resume-content li{ font-size: 1.8rem; }
+#resume-holder li{
+	font-size: 1.3em;
+	margin-top: 3px;
+}
 
-#resume-content div div:first-child{ 
-	float: left;
-	width: 19%;
-	color: rgba(200,127,34,1.00);
-	margin-right: 5px;
+#resume-holder tr td:first-child{
 	text-align: right;
-}
-	#resume-content div div:first-child h3{ margin-top: -1px; }
-	#resume-content div div:first-child h3:after{ content: ":"; }
-
-#resume-content div div:nth-child(2){ 
-	float: left; 
-	width: 80%;
-}
-
-#resume-content > h3{ 
-	font-size: 1.7rem; 
-	clear: left; 
-	text-align: center; 
+	color: rgba(200,127,34,1.00);
 }
 /* End Resume Stylings */
 
@@ -257,22 +266,22 @@ div.stretchy-wrapper {
 	border: 1px solid #CCC !important;
 }
 
-	/* Code Carousel Styles */
+	/* Carousel Styles */
 .carousel{
 	height: 95%;
 	overflow-y: auto;
 	margin: auto;
 }
-.carousel-inner{ height: 100%; }
 
 .carousel-inner .item{
-	height: 80%;
+	height: 590px;
 }
 	.carousel-inner .item img, .carousel-inner .item div:first-child{
 		width: 70%;
 		margin: auto;
 	}
 	.carousel-inner .item a > img{ height: 83%; max-width: 1280px; }
+	.carousel-inner .item div:first-child{ height: 55% !important; }
 
 .carousel-indicators{ 
 	bottom: 0px !important;

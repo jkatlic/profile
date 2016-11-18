@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+.bxslider .slider_bio_title{
+	float: left;
+	left: 10px;
+	width: 10%;
+}
+
+.bxslider .slider_bio_specs{
+	float: left;
+	width: 20%;
+}
+
+.bxslider .slider_bio_title h2{
+	font-weight: bold;
+	font-size: 1.9em;
+}
+
+.bxslider .slider_bio_specs p{
+	margin: 0;
+	padding: 0;
+}
+
+.spec_title{
+	font-weight: bold;		
+}
+
+.bxslider .slider_bio_title img{
+	width: 120px;
+	border: solid 2px #404040;
+	border-radius: 8px;
+	padding: 5px;
+}
+
+.bxslider .slider_bio_info{
+	float: right;
+	right: 10px;
+	width: 70%;
+	max-height: 450px !important;
+	overflow-y: auto;
+}
+
+.bxslider.slider_bio_info p{
+	text-indent: 25px;
+	margin: 0;
+	padding: 0;
+}

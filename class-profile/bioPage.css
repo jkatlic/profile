@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/*Splash Page Effect*/
+.landing{
+	background-attachment: fixed;
+	background-image: url(green-tree_index.jpg);
+	background-repeat: no-repeat;
+	background-position:center center right;
+	background-size: 100% 100%;
+}.button1:hover{
+	background-image:url(images/button1.png);
+}
+.button3:hover{
+	background-image:url(images/button3.png);
+}
+.button7:hover{
+	background-image:url(images/button7.png);
+}
+.button315:hover{
+	background-image:url(images/button3-15.png);
+}
+.button4:hover{
+	background-image:url(images/button4.png);
+}
+.button5:hover{
+	background-image:url(images/button5.png);
+}
+.button725:hover{
+	background-image:url(images/button7-25.png);
+}
+#Table_01{
+	margin-top:60px;
+}
+/*End splash page effects*/
+
+
+/*Start Main Body effects*/
+body {
+	background-attachment: fixed;
+	background-image: url(green-tree.jpg);
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size: 100% 100%;
+}
+
+.tdmainTextArea {
+	background-image: url(images/mainTextArea.png);
+	background-repeat: no-repeat;
+}
+.eventTextArea{
+	background-attachment: fixed;
+	background-image: url(images/Events.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.secret{
+	display:block;
+	text-align:center;
+	margin: 0 auto;
+}
+
+.secretBody{
+	background-image: url(metalBack.jpg);
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+a:hover{
+	color:white;
+}
+a:visted{
+	color:black;
+}
+.contentPicture{
+	border-radius:5px;
+}
+.contentMenu{
+	margin-top:40px;
+}
+h1{
+}
+h2{
+}
+p{
+}
