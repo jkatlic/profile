@@ -28,6 +28,10 @@
         
         P.S. I love easter eggs.. good luck hunting haha
     -->
+    
+    <?php
+        $pathMod = "/dev";
+    ?>
 </head>
 
 <body>
@@ -56,7 +60,7 @@
                         <li class="active"><a id="home-button" href="#header-logo"><i class="fa fa-desktop"></i> Home</a></li>
                         <li><a id="about-button" href="#about"><i class="fa fa-user"></i> About Me</a></li>
                         <li> <a id="code-button" href="#code"><i class="fa fa-code"></i> Websites</a></li>
-                        <!--<li><a id="resume-button" href="#resume"><i class="fa fa-cube"></i> Resume</a></li>-->
+                        <li><a id="resume-button" href="#resume"><i class="fa fa-cube"></i> Resume</a></li>
                         <li><a id="contact-button" href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
                       </ul>
                     </div>
@@ -169,99 +173,14 @@
             </div> 
         </div>
         
-        <!--<div class="profile-section"  id="resume">
+        <div class="profile-section"  id="resume">
           <h2>Resume</h2>
             <div class="profile-content" id="resume-holder">
-              
-    
-    
-    
-    This is old and we shouldn't display it. Replace with a download button? 
-    
-    
-    
-    
-              <table>
-                    <tr>
-                        <td colspan="2" style="text-align: center"><h1>Jeremy Katlic</h1></td>
-                    </tr>
-                    <tr>
-                        <td><h2>Objective:</h2></td>
-                        <td><p>Seeking web development/application developer opportunity where I can utilize my programming training and knowledge.</p></td>
-                    </tr>
-                    <tr>
-                        <td><h2>Qualifications:</h2></td>
-                        <td>
-                            <ul>
-                                <li>Working knowledge of Microsoft Office Suite</li>
-                                <li>Proficient with Adobe Suite</li>
-                                <li>Proficient with Microsoft Visual Studio</li>
-                                <li>CMS Knowledge (WordPress, Drupal)</li>
-                                <li>Understand basic graphic design concepts and techniques</li>
-                                <li>Knowledge of the following programming languages:</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="text-align: center"><h3> Android SDK * C# * CSS * HTML * Java * JavaScript * jQuery * PHP * Python * SQL</h3></td>
-                    </tr>
-                    <tr>
-                        <td><h2>Experience:</h2></td>
-                        <td><p>Schoolwires State College, PA                                        November 2014 – Present</p>
-                            <ul>
-                                <li>Web Developer</li>
-                                <li>Built websites as designed by a team of designers for K-12 schools and districts. Languages used include: JavaScript, jQuery, HTML, CSS and CSS3.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                        <td><p>ZedX Inc., Bellefonte, PA                                        October 2013 – September 2014</p>
-                            <ul>
-                                <li>Working part time as a programmer while attending South Hills.</li>
-                                <li>Currently work with many programming languages such as: PHP, Javascript, jQuery, HTML, CSS and SQL on a day-to-day basis to develop webpages and applications.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><p>Brewsky’s, State College, PA                  September 2012 – October 2013</p>
-                            <ul>
-                                <li>Part-time evenings and weekends to supplement income while attending South Hills full-time.</li>
-                                <li>Solely responsible for the day-to-day operations, which included anything from processing deliveries, to handling the customers and money.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><p>Spectra Wood, State College, PA                    February 2011 – August 2012</p>
-                            <ul>
-                                <li>Finishing and final inspection of furniture before shipping.</li>
-                                <li>Operating CNC machines.</li>
-                                <li>Shaping and forming of panels.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><h2>Education:</h2></td>
-                        <td><p>South Hills School of Business and Technology, State College, PA</p>
-                            <ul> 
-                                <li>Achieved an Associates Degree in Information Technology; with an emphasis programming.</li>
-                                <li>Dean’s List/ Graduated September 2014 with High Honors</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><p>Art Institute of Pittsburgh, Pittsburgh, PA</p>
-                            <ul>
-                                <li>Pursued a bachelor’s degree in graphic design</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
+                <object data="<?php echo $pathMod; ?>/files/jeremy-katlics-resume.pdf" type="application/pdf" width="100%" height="100%">
+                    alt : <a href="<?php echo $pathMod; ?>/files/jeremy-katlics-resume.pdf" target="_blank">View My Resume!</a>
+                </object>
             </div>
-        </div> -->
+        </div>
         
         <div class="profile-section"  id="contact">
           <div class="profile-content" id="contact-button-container">
