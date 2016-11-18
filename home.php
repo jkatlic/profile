@@ -230,7 +230,7 @@
         </div>
         
         <div id="footer">
-          <p>&copy; 2015 Jeremy Katlic Designs</p>
+          <p>&copy; 2016 Jeremy Katlic</p>
         </div>
   </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
