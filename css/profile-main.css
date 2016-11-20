@@ -1,21 +1,29 @@
 body{
 	background: url(../img/b2.jpg) no-repeat;
 	background-attachment: fixed;
-	background-size: 200% 125%;
+	background-size: cover;
 	background-position: center center;
 	margin: 0; 
 	padding: 0;
+    text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    font-smoothing: antialiased !important;
 }
 
 
 /* Site Controls */
 #site-controls{ 
+    height: 0;
 	width: 100%;
 	position: fixed;
 	bottom: 0px;
 	z-index: 50;
+    overflow: visible;
 }
 	#site-controls i{ 
+        position: absolute;
+        top: -70px;
 		color: rgba(200, 200, 200, 0.7); 
 		cursor: pointer;
 		z-index: 15; 
@@ -23,8 +31,8 @@ body{
 	
 	#site-controls > #home-controls{ width: 100%; text-align: center; }
 	#site-controls > #other-controls{ width: 100%; }
-		#site-controls > #other-controls > i:first-child{ float: left; }
-		#site-controls > #other-controls > i:nth-child(2){ float: right; }
+		#site-controls > #other-controls > i:first-child{ left: 0; }
+		#site-controls > #other-controls > i:nth-child(2){ right: 0; }
 /* End Site Controls */
 
 
@@ -37,31 +45,36 @@ body{
 
 .profile-section {
     width: 100%;
-    height: 700px;
-    padding: 25px 0px;
+    padding: 45px 0px;
     margin: 100px 0px;
-    background-color: rgba(15, 15, 15, 0.6);
+    background-color: rgba(15, 15, 15, 0.15);
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
-	#home.profile-section{ background: none !important; }
+.profile-section.active{
+    background-color: rgba(15, 15, 15, 0.55);
+}
+#home.profile-section{ background: none !important; }
 	
 	.profile-section > h2{ 
+        display: none;
 		position: relative;
-		top: -58px;
 		font-size: 3.5em;
-		color: #CCC;
-		margin: 10px 20px;
-		text-shadow: 0px 0px 2px #000;
+		color: #eee;
+		margin: 0 20px 10px;
+		text-shadow: 0px 0px 1px #000;
 	}
 	
 	.profile-section > .profile-content{ /*profile section content pane*/
-		width: 90%;
-		max-width: 1280px;
-		height: 91%;
-		overflow-y: auto;
-		margin: auto;
-		padding: 3px 10px;
-		background-color: rgba(201, 192, 165, 0.86);
-		font-size: 1.5em;
+		width: 100%;
+        max-width: 1280px;
+        height: 100%;
+        overflow-y: auto;
+        margin: auto;
+        padding: 25px 30px;
+        background-color: rgba(245, 245, 245, 0.86);
+        font-size: 1.5em;
 	}
 	
 .fixed-menu{
@@ -94,15 +107,64 @@ button.navbar-toggle{
 	box-shadow: none !important;
 }
 
+.navbar-inverse{
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
 .container.open > .navbar.navbar-inverse{ 
 	background: none !important;
 	border: none !important;
 }
+    .container > .navbar.navbar-inverse .navbar-nav a{
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+    .container > .navbar.navbar-inverse .navbar-nav a:before{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: calc(50% - 5.5px);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 11px 0 11px;
+        border-color: #efefef transparent transparent transparent;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+
+    .navbar-inverse .navbar-nav > .active > a, 
+    .navbar-inverse .navbar-nav > .active > a:hover, 
+    .navbar-inverse .navbar-nav > .active > a:focus{
+        background-color: #efefef; 
+        color: #080808 !important;
+    }
+    .navbar-inverse .navbar-nav > .active > a:before, 
+    .navbar-inverse .navbar-nav > .active > a:hover:before, 
+    .navbar-inverse .navbar-nav > .active > a:focus:before{
+        border-width: 12px 11px 0 11px !important;
+    }
+    .container > .navbar.navbar-inverse .navbar-nav a#home-button:before{
+        display: none;
+    }
+
+
 	.container.open > .navbar.navbar-inverse .active > a{ border: solid 1px #666; background: none !important; }
-	.container.open > .navbar.navbar-inverse a{ color: #222 !important; }
+	.container.open > .navbar.navbar-inverse a{ 
+        color: #222 !important; 
+    }
 	.container.open > .navbar.navbar-inverse a:hover, 
 	.container.open > .navbar.navbar-inverse a:focus{ color: #000 !important; border-bottom: solid 1px; }
-	.container.open .navbar-toggle .icon-bar{ background-color: rgba(53, 53, 53, 1); }
+
+	.container.open .navbar-toggle .icon-bar{ 
+        background-color: rgba(53, 53, 53, 1); 
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
 	.container.open .navbar-toggle:hover .icon-bar,
 	.container.open .navbar-toggle:active .icon-bar,
 	.container.open .navbar-toggle:focus .icon-bar{ background-color: rgba(220, 220, 220, 1); }
@@ -122,6 +184,9 @@ button.navbar-toggle{
 		font-size: 1em;
 		color: #666;
 		text-shadow: 0px 0px 0px #222;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
 	}
 	
 	#home a:hover{ color: #CCC; }
@@ -165,7 +230,7 @@ button.navbar-toggle{
     position: relative;
     margin: 35px 3px;
 	padding-bottom: 5px;
-    background-color: rgba(34, 34, 34, 0.96);
+    background-color: rgba(82,86,89,0.7);
     color: #D39633;
 }
 	.contact-button i{ /*center the icons*/
@@ -180,6 +245,10 @@ div.stretchy-wrapper {
 	display: inline-block;
 }
 	/*I did this just for the practice of the technique*/
+.contact-button:after {
+    position: relative;
+    top: -19px;
+}
 .contact-button#ln:after{ content: "LinkedIn"; }
 .contact-button#tw:after{ content: "Twitter"; }
 .contact-button#ig:after{ content: "Instagram"; }
@@ -191,45 +260,12 @@ div.stretchy-wrapper {
 
 /* Resume Stylings */
 #resume-holder{
-	width: 90%;
+    height: 768px;
+	width: 100%;
 	margin: auto;
 	background: rgba(217,216,200,0.80);
 	font-size: 16px;
-	overflow-y: auto;
-}
-#resume-holder td{
-	padding: 5px;
-	vertical-align:text-top;
-}
-
-#resume-holder h2{
-	font-size: 1.9em;
-	font-weight: bold;
-}
-
-#resume-holder h1{
-	font-size: 2.6em;
-	font-weight: bold;
-}
-
-#resume-holder h3{
-	font-size: 1.6em;
-	font-weight: bold;
-	letter-spacing: 2px;
-}
-
-#resume-holder p{
-	font-size: 1.3em;
-}
-
-#resume-holder li{
-	font-size: 1.3em;
-	margin-top: 3px;
-}
-
-#resume-holder tr td:first-child{
-	text-align: right;
-	color: rgba(200,127,34,1.00);
+	overflow: hidden;
 }
 /* End Resume Stylings */
 
@@ -242,6 +278,9 @@ div.stretchy-wrapper {
 	color: rgba(211,150,51,1.00);
 	font-size: 1.3em;
 	text-align: center;
+}
+#footer p{
+    margin: 0;
 }
 /* End Footer */
 
