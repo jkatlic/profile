@@ -59,7 +59,7 @@
                       <ul class="smooth-scroll nav navbar-nav">
                         <li class="active"><a id="home-button" href="#header-logo"><i class="fa fa-desktop"></i> Home</a></li>
                         <li><a id="about-button" href="#about"><i class="fa fa-user"></i> About Me</a></li>
-                        <li> <a id="code-button" href="#code"><i class="fa fa-code"></i> Websites</a></li>
+                        <li> <a id="code-button" href="#code"><i class="fa fa-code"></i> Examples</a></li>
                         <li><a id="resume-button" href="#resume"><i class="fa fa-cube"></i> Resume</a></li>
                         <li><a id="contact-button" href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
                       </ul>
