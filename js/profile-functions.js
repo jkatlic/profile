@@ -14,7 +14,7 @@ function CheckCurrentSection(){
 		var sect = document.getElementById(elem.getAttribute('id')).getBoundingClientRect();
 		
 		if(sect.top <= 400 && sect.top >= 0){ //catchs the elements as they pass right below the menu bar
-			MakeSectionActive("#" + elem.getAttribute('id') + "-button"); //makes that menu item active
+			MakeSectionActive("#" + elem.getAttribute('id')); //makes that menu item active
 			currElem = elem.getAttribute('id');
 			return false;
 		}
@@ -50,8 +50,13 @@ function CheckCurrentSection(){
 function MakeSectionActive( id ){
 		//only one item is active at a time, so this will reset it
 	$('.navbar-nav').children(".active").removeClass("active"); 
-		//get the parent li and add the active class to it.
-	$(id).closest("li").addClass("active");
+    
+    //reset the active section
+    $('.profile-section.active').removeClass('active');
+    //mark the new active section
+    $(id).addClass('active');
+    //get the parent li and add the active class to it.
+	$(id + "-button").closest("li").addClass("active");
 }
 
 /*

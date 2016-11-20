@@ -5,7 +5,7 @@ $(document).ready(function(e){
 		if(rect.top <= 0){ //make the menu fixed because it will leave the page otherwise
 				//manage the menu
 			$('.navbar-wrapper .container').addClass('fixed-menu').removeClass('open');
-			$('.navbar-brand').html("Jeremy Katlic");
+			$('.navbar-brand').text("Jeremy Katlic");
 			
 				//manage the site controls
 			$('#site-controls > #home-controls').addClass("hidden");
@@ -13,7 +13,7 @@ $(document).ready(function(e){
 		}else{ //make it styling again haha
 			if(document.body.scrollTop <= 150){
 				$('.navbar-wrapper .container').removeClass('fixed-menu').addClass('open');
-				$('.navbar-brand').html("");
+				$('.navbar-brand').text("");
 				
 				$('#site-controls > #other-controls').addClass("hidden");
 				$('#site-controls > #home-controls').removeClass("hidden");
