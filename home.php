@@ -35,14 +35,14 @@
 </head>
 
 <body>
-  <div id="contain-all">
-        <div id="header-logo">
+  <div id="contain-all"> <!-- just keeps script tags seperate from main HTML more for readability than anything else. -->
+        <header id="header-logo">
             <h1>Jeremy Katlic</h1>
-        </div>
+        </header>
         
         <!-- Start Menu Container -->
-        <div id="menu-container"> <!-- This acts as a "ghost" so that no content jumps when the menu becomes fixed. -->  
-            <div class="navbar-wrapper">
+        <nav id="menu-container"> <!-- This acts as a "ghost" so that no content jumps when the menu becomes fixed. -->  
+            <section class="navbar-wrapper">
               <div class="container open">
                 <div class="navbar navbar-inverse" role="navigation">
                   <div class="container open">
@@ -67,24 +67,24 @@
                   </div>
               </div>
             </div>
-          </div>
-        </div>
+          </section>
+        </nav>
         <!-- End Menu Container -->
-        <div id="site-controls">
-          <div id="home-controls">
-            <i data-task="down" class="fa fa-angle-double-down fa-5x"></i>
-        </div>
-            <div id="other-controls" class="hidden">
+        <nav id="site-controls">
+            <section id="home-controls">
+                <i data-task="down" class="fa fa-angle-double-down fa-5x"></i>
+            </section>
+            <section id="other-controls" class="hidden">
               <i data-task="down" class="fa fa-angle-double-down fa-5x"></i>
                 <i data-task="up" class="fa fa-angle-double-up fa-5x"></i>
-            </div>
-        </div>
+            </section>
+        </nav>
         
-        <div class="profile-section smooth-scroll" id="home">
-        </div>
+        <section class="profile-section smooth-scroll" id="home">
+        </section>
         
         
-        <div class="profile-section" id="about">
+        <section class="profile-section" id="about">
           <h2>About Me</h2>
           <div class="profile-content">
                 <p class="first-line">When I got out of High School I went straight to the Art Institute of Pittsburgh to study graphic design. I found that graphic design wasn't exactly my "thing," but I had gained a better understanding of modern digital design, techniques, and some of the tools they use. Some of my favorite classes at AIP were color theory, perspective drawing, typography, and Photoshop. My education there has helped me a lot in my pursuit of becoming a web/mobile application developer.
@@ -96,9 +96,9 @@
                 I am all about the open source world, and try to help contribute to it all of the time. Places like GitHub, StackOverflow, and JsFiddle help to make my contributing easier. There is a simple joy in people joining together to help one another accomplish amazing feats. It also allows for new technology and ideas to be enjoyed by everyone rich and poor, and I am eager to start making my mark!
                 </p>
           </div>
-        </div>
+        </section>
         
-        <div class="profile-section" id="code">
+        <section class="profile-section" id="code">
           <h2>School Projects</h2>
           <!-- Wrapper for cards -->
           <ul class="project-cards flex-cont wrap">
@@ -138,18 +138,18 @@
                 </a>
             </li>
           </ul> 
-        </div>
+        </section>
         
-        <div class="profile-section"  id="resume">
+        <section class="profile-section"  id="resume">
           <h2>Resume</h2>
             <div class="profile-content" id="resume-holder">
                 <object data="<?php echo $pathMod; ?>/files/jeremy-katlics-resume.pdf" type="application/pdf" width="100%" height="100%">
                     alt : <a href="<?php echo $pathMod; ?>/files/jeremy-katlics-resume.pdf" target="_blank">View My Resume!</a>
                 </object>
             </div>
-        </div>
+        </section>
         
-        <div class="profile-section"  id="contact">
+        <section class="profile-section"  id="contact">
           <div class="profile-content" id="contact-button-container">
                 <div class="stretchy-wrapper">
                   <a href="http://www.linkedin.com/pub/jeremy-katlic/6b/347/998" target="_blank">
@@ -194,14 +194,14 @@
                     </a>
                 </div>
           </div>
-        </div>
+        </section>
         
-        <div id="footer">
+        <footer id="footer">
           <p>&copy; 2016 Jeremy Katlic</p>
-        </div>
+        </footer>
   </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="plugins/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <script src="plugins/bootstrap/js/bootstrap.js" type="text/javascript"></script>
     <script src="plugins/colorbox/jquery.colorbox-min.js"></script>
     <script src="js/profile-functions.js" type="text/javascript"></script>
     <script src="js/profile-main.js" type="text/javascript"></script>
