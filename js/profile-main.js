@@ -27,8 +27,6 @@ $(document).ready(function(e){
 		SmoothScroll( this.getAttribute("href") );
 	});
 	
-	$( document ).tooltip({ track: true });
-	
 	$('.iframe').colorbox({
 		iframe: true, 
 		width:"85%", 
@@ -38,14 +36,6 @@ $(document).ready(function(e){
 		"close": "<i class='fa fa-close'></i> Close",
 		fastIframe: true
 	});
-	
-	/*$('.picture').colorbox({
-		rel:'gal', 
-		maxHeight: '850px', 
-		maxWidth: '90%', 
-		"close": "<i class='fa fa-close'></i> Close",
-		top: '0px'
-	});*/
 	
 	/*
 	** This is a future idea don't have the HTML setup for it yet..
