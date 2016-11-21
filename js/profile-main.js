@@ -39,13 +39,13 @@ $(document).ready(function(e){
 		fastIframe: true
 	});
 	
-	$('.picture').colorbox({
+	/*$('.picture').colorbox({
 		rel:'gal', 
 		maxHeight: '850px', 
 		maxWidth: '90%', 
 		"close": "<i class='fa fa-close'></i> Close",
 		top: '0px'
-	});
+	});*/
 	
 	/*
 	** This is a future idea don't have the HTML setup for it yet..
