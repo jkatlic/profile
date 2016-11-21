@@ -99,78 +99,45 @@
         </div>
         
         <div class="profile-section" id="code">
-          <h2>Websites</h2>
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-              </ol>
-            
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner">
-                <div class="item active">
-                    <a class="iframe"  href="http://www.jeremykatlic.com/favorite-movies/">
-                        <img src="img/design/movie site.PNG" alt="Movie Site" />
-                    </a>
-                    <div class="carousel-caption">
+          <h2>School Projects</h2>
+          <!-- Wrapper for cards -->
+          <ul class="project-cards flex-cont wrap">
+            <li class="item">
+                <a class="iframe"  href="http://www.jeremykatlic.com/favorite-movies/" style="background-image: url('img/design/movie site.PNG')">
+                    <div class="card-caption flex-cont cols just-cent">
                         <h3>First site!!!</h3>
                         <p>A site to showcase some of my favorite movies.</p>
                     </div>
-                </div>
-                
-                <!--<div class="item ">
-                   <a class="iframe"  href="http://www.jeremykatlic.com/hiking-joe/">
-                     <img src="img/design/hiking site landing page.PNG" alt="Hiking Site"/>
-                   </a>
-                   <div class="carousel-caption">
-                        <h3>Hiking Joe</h3>
-                        <p>I was experimenting with creating a realistic user interface.</p>
-                    </div>
-                </div>-->
-                
-                <div class="item ">
-                   <a class="iframe"  href="http://www.jeremykatlic.com/class-profile/">
-                     <img src="img/design/class-profile.PNG" alt="My class profile site"/>
-                   </a>
-                   <div class="carousel-caption">
+                </a>
+            </li>
+
+            <li class="item">
+               <a class="iframe"  href="http://www.jeremykatlic.com/class-profile/" style="background-image: url('img/design/class-profile.PNG')">
+                   <div class="card-caption flex-cont cols just-cent">
                         <h3>Class Profile</h3>
                         <p>A profile site I created as a final for one of my web design classes.</p>
                     </div>
-                </div>
-               
-                <div class="item ">
-                   <a class="iframe"  href="http://www.jeremykatlic.com/word-grinder/">
-                     <img src="img/design/word-grinder.PNG" alt="Word Grinder Screenshot"/>
-                   </a>
-                   <div class="carousel-caption">
+                </a>
+            </li>
+
+            <li class="item">
+               <a class="iframe"  href="http://www.jeremykatlic.com/word-grinder/" style="background-image: url('img/design/word-grinder.PNG');">
+                   <div class="card-caption flex-cont cols just-cent">
                         <h3>Word Grinder!!</h3>
                         <p>A small, but fun, website that takes in text, and spits out a count of duplicate words.</p>
                     </div>
-                </div>
-                
-                 <div class="item ">
-                   <a class="iframe"  href="http://www.jeremykatlic.com/dvrc/">
-                     <img src="img/design/dvrc.PNG" alt="DVRC Screenshot"/>
-                   </a>
-                   <div class="carousel-caption">
+                </a>
+            </li>
+
+            <li class="item">
+               <a class="iframe"  href="http://www.jeremykatlic.com/dvrc/" style="background-image: url('img/design/dvrc.PNG');">
+                   <div class="card-caption flex-cont cols just-cent">
                         <h3>DVRC (Local Non-Profit)</h3>
                         <p>I Re-designed their website for a school project.</p>
                     </div>
-                </div>
-              </div>
-            
-              <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-              </a>
-              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-              </a>
-            </div> 
+                </a>
+            </li>
+          </ul> 
         </div>
         
         <div class="profile-section"  id="resume">
