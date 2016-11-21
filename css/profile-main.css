@@ -81,6 +81,19 @@ body{
 	position: fixed !important;
 	top: 0 !important;
 }
+
+.flex-cont{
+    display: flex;
+}
+.flex-cont.wrap{
+    flex-wrap: wrap;
+}
+.flex-cont.cols{
+    flex-direction: column;
+}
+.flex-cont.just-cent{
+    justify-content: center;
+}
 /* End Main Classes */	
 	
 	
@@ -88,6 +101,9 @@ body{
 #header-logo{
 	height: 80px;
 	margin: 15px 25px;
+}
+#header-logo h1{
+    font-size: 42px; /* When wondering what to make the size of my name in the header I landed on the answer to life, the universe, and everything! HHGTG FTW */
 }
 
 #menu-container{ /*a safety net for the changing nav bar*/
@@ -306,35 +322,76 @@ div.stretchy-wrapper {
 }
 
 	/* Carousel Styles */
-.carousel{
-	height: 95%;
-	overflow-y: auto;
-	margin: auto;
+#code > ul{
+    max-width: 1280px;
+    margin: 0 auto;
 }
-
+#code > ul > li {
+    width: 25%;
+    height: 480px;
+    overflow: hidden;
+    padding: 0 20px;
+}
+#code > ul > li > a {
+    position: relative;
+    display: block;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.carousel-inner{
+    max-width: 1280px;
+    margin: 0 auto;
+}
 .carousel-inner .item{
-	height: 590px;
+    overflow: hidden;
 }
-	.carousel-inner .item img, .carousel-inner .item div:first-child{
-		width: 70%;
-		margin: auto;
-	}
-	.carousel-inner .item a > img{ height: 83%; max-width: 1280px; }
-	.carousel-inner .item div:first-child{ height: 55% !important; }
-
 .carousel-indicators{ 
 	bottom: 0px !important;
 	z-index: 0 !important;
 }
 
-.carousel-caption{ 
-	right: 20%;
-	left: 20%;
-	height: 73px;
-	z-index: 0;
+#code .card-caption {
+    background: rgba(20, 20, 20, 0.2);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
-	.carousel-caption h3{ font-size: 1.9em; margin: 0px; }
-	.carousel-caption p{ font-size: 1.5em; margin: 0px; }
+#code a:hover .card-caption,
+#code a:focus .card-caption{
+    background: rgba(20, 20, 20, 0.55);
+}
+    .card-caption h3,
+    .card-caption p{
+        opacity: 0;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+    a:hover .card-caption h3,
+    a:hover .card-caption p,
+    a:focus .card-caption h3,
+    a:focus .card-caption p{
+        opacity: 1;
+    }
+
+	.card-caption h3{ 
+        font-size: 1.9em; 
+        margin: 0px; 
+        color: #FFF;
+    }
+	.card-caption p{ 
+        font-size: 1.5em; 
+        margin: 0px;
+        color: #FFF;
+    }
 
 .carousel-control > span.glyphicon{ 
 	border-radius: 100px;

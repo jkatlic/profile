@@ -34,8 +34,20 @@
     
     #site-controls i { font-size: 3.8em; }
 	.contact-button i{font-size: 4.1em}
-	.carousel-inner .item a > img{ height: 80% !important; }
-	.carousel-caption { bottom: 50px; }
+    #code > ul > li{
+        width: 100%;
+        height: 200px;
+    }
+    #code > ul > li > a{
+        text-align: center;
+    }
+    #code .card-caption{
+        background: rgba(20, 20, 20, 0.55);
+    }
+    .card-caption h3,
+    .card-caption p{
+        opacity: 1;
+    }
     
     .contact-button:after {
         display: none;
@@ -77,5 +89,7 @@
 	.carousel-caption { bottom: 58px; }
 }
 @media all and (max-width: 479px) { /* 320 */
-
+    .contact-button{
+        margin: 8px 3px;
+    }
 }
